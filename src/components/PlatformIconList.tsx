@@ -16,6 +16,7 @@ import { IconType } from "react-icons";
 interface Props {
   platforms: Platform[];
 }
+
 const PlatformIconList = ({ platforms }: Props) => {
   const iconMap: { [key: string]: IconType } = {
     pc: FaWindows,
@@ -28,6 +29,7 @@ const PlatformIconList = ({ platforms }: Props) => {
     ios: MdPhoneIphone,
     web: BsGlobe,
   };
+
   return (
     <HStack marginY={"10px"}>
       {platforms.map((platform) => (
